@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Scripta Automated Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="tableauUrl" value="https://tableau.scriptainsights.com/"/>
+  <parameter name="url" value="https://portal-int.scriptainsights.io/register/login"/>
+  <test thread-count="5" name="Scripta Test(failed)">
+    <classes>
+      <class name="client.reporting.ClientAutomatedReportingCapture">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="capture" invocation-numbers="0"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- client.reporting.ClientAutomatedReportingCapture -->
+    </classes>
+  </test> <!-- Scripta Test(failed) -->
+</suite> <!-- Failed suite [Scripta Automated Test Suite] -->
